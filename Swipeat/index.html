@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipeat - Trouve ton resto en un swipe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span class="logo-icon">🍽️</span>
+                    <span class="logo-text">Swipeat</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#features">Fonctionnalités</a></li>
+                    <li><a href="#stats">Statistiques</a></li>
+                    <li><a href="#pricing">Tarifs</a></li>
+                </ul>
+                <button class="btn-primary">Télécharger</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Trouve ton <span class="highlight">restaurant parfait</span> en un swipe</h1>
+                    <p class="hero-description">Fini l'indécision ! Notre <strong>intelligence artificielle</strong> analyse tes goûts, ton humeur et tes envies pour te recommander le resto parfait. Swipe, match, régale-toi !</p>
+                    
+                    <div class="hero-features">
+                        <div class="feature-badge">
+                            <span class="icon">⚡</span>
+                            <span>Décision en 30 secondes</span>
+                        </div>
+                        <div class="feature-badge">
+                            <span class="icon">📍</span>
+                            <span>Autour de toi</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-cta">
+                        <button class="btn-hero">Commencer gratuitement</button>
+                        <button class="btn-secondary">Voir la démo</button>
+                    </div>
+
+                    <div class="social-proof">
+                        <div class="avatars">
+                            <div class="avatar">👨</div>
+                            <div class="avatar">👩</div>
+                            <div class="avatar">🧔</div>
+                            <div class="avatar">👱‍♀️</div>
+                        </div>
+                        <div class="proof-text">
+                            <strong>+50 000 utilisateurs</strong>
+                            <span>ont trouvé leur resto</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="restaurant-card">
+                                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80');">
+                                    <div class="card-badge">🔥 Tendance</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Le Bistro Moderne</h3>
+                                    <p class="card-cuisine">🍝 Cuisine italienne • 📍 850m</p>
+                                    <div class="card-rating">
+                                        ⭐ 4.8 <span>(245 avis)</span>
+                                    </div>
+                                    <div class="card-tags">
+                                        <span class="tag">Romantique</span>
+                                        <span class="tag">Terrasse</span>
+                                        <span class="tag">€€</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swipe-actions">
+                                <button class="action-btn nope">✕</button>
+                                <button class="action-btn like">❤</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-decoration"></div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <div class="container">
+            <h2 class="section-title">L'IA qui révolutionne ta façon de <span class="highlight">choisir</span></h2>
+            <p class="section-subtitle" style="margin-top: -40px; margin-bottom: 40px;">Notre intelligence artificielle analyse des milliers de critères pour te proposer le resto parfait à chaque fois</p>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Utilisateurs actifs</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🍽️</div>
+                    <div class="stat-number">2 500+</div>
+                    <div class="stat-label">Restaurants partenaires</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">💚</div>
+                    <div class="stat-number">150K+</div>
+                    <div class="stat-label">Matchs réussis</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-number">4.9/5</div>
+                    <div class="stat-label">Note moyenne</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Comment ça <span class="highlight">marche ?</span></h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-number">01</div>
+                    <div class="feature-icon">📱</div>
+                    <h3>Swipe</h3>
+                    <p>Parcours les restaurants autour de toi et swipe selon tes envies du moment</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">02</div>
+                    <div class="feature-icon">🎯</div>
+                    <h3>Match</h3>
+                    <p>Notre IA analyse tes préférences et trouve le restaurant parfait</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">03</div>
+                    <div class="feature-icon">🍴</div>
+                    <h3>Régale-toi</h3>
+                    <p>Réserve directement depuis l'app et profite de réductions exclusives</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Choisis ton <span class="highlight">plan</span></h2>
+            <p class="section-subtitle">Des formules adaptées à ton appétit de découvertes</p>
+            
+            <div class="pricing-grid">
+                <!-- Free Plan -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Gratuit</h3>
+                        <div class="plan-price">
+                            <span class="price">0 CHF</span>
+                            <span class="period">/mois</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check">✓</span> 30 swipes par jour</li>
+                        <li><span class="check">✓</span> Restaurants dans un rayon de 10 km</li>
+                        <li><span class="check">✓</span> Réservation standard</li>
+                        <li><span class="cross">✕</span> Filtres avancés</li>
+                        <li><span class="cross">✕</span> Réductions exclusives</li>
+                        <li><span class="cross">✕</span> Recommandations premium</li>
+                    </ul>
+                    <button class="btn-plan">Commencer</button>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="pricing-card featured">
+                    <div class="popular-badge">🔥 Populaire</div>
+                    <div class="plan-header">
+                        <h3>Premium</h3>
+                        <div class="plan-price">
+                            <span class="price">9.90 CHF</span>
+                            <span class="period">/mois</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check">✓</span> Swipes illimités</li>
+                        <li><span class="check">✓</span> Restaurants dans toute la ville</li>
+                        <li><span class="check">✓</span> Réservation prioritaire</li>
+                        <li><span class="check">✓</span> Tous les filtres avancés</li>
+                        <li><span class="check">✓</span> -30% dans les restos partenaires</li>
+                        <li><span class="check">✓</span> IA de recommandation premium</li>
+                    </ul>
+                    <button class="btn-plan primary">Essayer 7 jours gratuits</button>
+                </div>
+
+                <!-- VIP Plan -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>VIP</h3>
+                        <div class="plan-price">
+                            <span class="price">19.90 CHF</span>
+                            <span class="period">/mois</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check">✓</span> Tous les avantages Premium</li>
+                        <li><span class="check">✓</span> -50% dans les restos partenaires</li>
+                        <li><span class="check">✓</span> Accès aux nouveaux restos en avant-première</li>
+                        <li><span class="check">✓</span> Concierge IA personnel 24/7</li>
+                        <li><span class="check">✓</span> Prédictions des nouveaux spots tendance</li>
+                        <li><span class="check">✓</span> Badge VIP sur ton profil</li>
+                    </ul>
+                    <button class="btn-plan">Devenir VIP</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à découvrir ton prochain <span class="highlight">coup de cœur</span> ?</h2>
+                <p>Rejoins la communauté Swipeat et laisse notre IA te guider vers les meilleurs restaurants. Ne te pose plus jamais la question "On mange où ?"</p>
+                <button class="btn-hero">Télécharger maintenant</button>
+                <div class="app-badges">
+                    <div class="badge">📱 App Store</div>
+                    <div class="badge">🤖 Google Play</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🍽️</span>
+                        <span class="logo-text">Swipeat</span>
+                    </div>
+                    <p>L'IA qui trouve ton restaurant parfait en un swipe</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Produit</h4>
+                        <a href="#">Fonctionnalités</a>
+                        <a href="#">Tarifs</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Entreprise</h4>
+                        <a href="#">À propos</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Carrières</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="#">Contact</a>
+                        <a href="#">Aide</a>
+                        <a href="#">CGU</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Swipeat. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
