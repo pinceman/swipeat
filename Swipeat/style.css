@@ -882,8 +882,8 @@ body {
     /* Phone mockup mobile */
     .phone-mockup {
         transform: scale(0.75);
-        overflow: hidden;
-        margin: 0 auto;
+        overflow: visible;
+        margin: 0 auto 40px auto;
         display: block;
     }
 
@@ -894,19 +894,20 @@ body {
         position: relative;
         z-index: 1;
         margin: 0 auto;
+        overflow: hidden;
     }
 
     .restaurant-card {
-        height: 535px;
+        height: 450px;
     }
 
     .card-image {
-        height: 340px;
+        height: 280px;
         background-size: cover;
     }
 
     .card-content {
-        padding: 18px 20px;
+        padding: 14px 16px;
     }
 
     .card-content h3 {
@@ -934,14 +935,14 @@ body {
     }
 
     .swipe-actions {
-        bottom: 22px;
-        gap: 30px;
+        bottom: 12px;
+        gap: 25px;
     }
 
     .action-btn {
-        width: 60px;
-        height: 60px;
-        font-size: 26px;
+        width: 55px;
+        height: 55px;
+        font-size: 24px;
     }
 
     /* Sections mobile */
@@ -1165,8 +1166,9 @@ body {
 
     .phone-mockup {
         transform: scale(0.68);
-        margin: 0 auto;
+        margin: 0 auto 40px auto;
         display: block;
+        overflow: visible;
     }
 
     .phone-frame {
@@ -1175,19 +1177,20 @@ body {
         padding: 10px;
         position: relative;
         margin: 0 auto;
+        overflow: hidden;
     }
 
     .restaurant-card {
-        height: 500px;
+        height: 420px;
     }
 
     .card-image {
-        height: 310px;
+        height: 260px;
         background-size: cover;
     }
 
     .card-content {
-        padding: 16px 18px;
+        padding: 12px 16px;
     }
 
     .card-content h3 {
@@ -1208,14 +1211,14 @@ body {
     }
 
     .swipe-actions {
-        bottom: 20px;
-        gap: 25px;
+        bottom: 10px;
+        gap: 20px;
     }
 
     .action-btn {
-        width: 55px;
-        height: 55px;
-        font-size: 24px;
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
     }
 
     .stats, .features, .pricing {
