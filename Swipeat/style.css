@@ -345,6 +345,12 @@ body {
     font-size: 13px;
     font-weight: 600;
     border: 1px solid rgba(255, 71, 87, 0.3);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    line-height: 1;
+    white-space: nowrap;
 }
 
 .swipe-actions {
@@ -958,6 +964,7 @@ body {
     .tag {
         padding: 6px 12px;
         font-size: 11px;
+        height: 30px;
     }
 
     .swipe-actions {
@@ -1234,6 +1241,7 @@ body {
     .tag {
         padding: 5px 10px;
         font-size: 10px;
+        height: 26px;
     }
 
     .swipe-actions {
