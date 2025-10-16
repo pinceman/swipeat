@@ -1,0 +1,11 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M308.5 178.5C308.5 178.5 295 165 280 165C265 165 245 175 245 175C245 175 235 185 235 200C235 215 245 225 245 225L220 240C220 240 200 255 185 280C170 305 165 335 165 335C165 335 160 365 165 395C170 425 185 450 185 450C185 450 200 475 225 490C250 505 280 510 280 510C280 510 310 515 340 510C370 505 395 490 395 490C395 490 420 475 430 450C440 425 440 395 440 395C440 395 440 365 430 335C420 305 400 280 400 280L280 250L308.5 178.5Z" fill="#FF6B35"/>
+  <g transform="translate(210, 200) scale(0.8)">
+    <rect x="15" y="10" width="8" height="45" rx="2" fill="white"/>
+    <rect x="28" y="15" width="6" height="40" rx="2" fill="white"/>
+    <rect x="38" y="12" width="7" height="43" rx="2" fill="white"/>
+    <rect x="49" y="17" width="6" height="38" rx="2" fill="white"/>
+    <ellipse cx="35" cy="8" rx="30" ry="8" fill="white"/>
+  </g>
+</svg>
+

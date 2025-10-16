@@ -17,13 +17,14 @@
         <div class="container">
             <div class="nav-content">
                 <div class="logo">
-                    <span class="logo-icon">🍽️</span>
+                    <img src="assets/logo.svg" alt="SwipEat Logo" class="logo-icon">
                     <span class="logo-text">Swipeat</span>
                 </div>
                 <ul class="nav-links">
                     <li><a href="#features">Fonctionnalités</a></li>
                     <li><a href="#stats">Statistiques</a></li>
                     <li><a href="#pricing">Tarifs</a></li>
+                    <li><a href="#blog">Blog</a></li>
                 </ul>
                 <button class="btn-primary">Télécharger</button>
             </div>
@@ -244,7 +245,7 @@
     </section>
 
     <!-- Blog Section -->
-    <section class="blog">
+    <section id="blog" class="blog">
         <div class="container">
             <h2 class="section-title">Nos <span class="highlight">articles</span></h2>
             <p class="section-subtitle">Découvre nos dernières actualités et insights</p>
@@ -397,10 +398,19 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="logo">
-                        <span class="logo-icon">🍽️</span>
+                        <img src="assets/logo.svg" alt="SwipEat Logo" class="logo-icon">
                         <span class="logo-text">Swipeat</span>
                     </div>
                     <p>L'IA qui trouve ton restaurant parfait en un swipe</p>
+                    <div class="footer-contact">
+                        <a href="mailto:contact.swipeat@gmail.com" class="contact-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>contact.swipeat@gmail.com</span>
+                        </a>
+                    </div>
                     <div class="footer-social">
                         <a href="https://www.instagram.com/swipeat.app" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -609,6 +619,72 @@
                 this.style.transform = '';
             }, 200);
         });
+
+        // Touch/Swipe functionality
+        let touchStartX = 0;
+        let touchStartY = 0;
+        let touchEndX = 0;
+        let touchEndY = 0;
+        let currentCardElement = null;
+
+        function handleTouchStart(e) {
+            if (isAnimating) return;
+            currentCardElement = document.querySelector('.restaurant-card.active');
+            if (!currentCardElement) return;
+            
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
+        }
+
+        function handleTouchMove(e) {
+            if (isAnimating || !currentCardElement) return;
+            
+            touchEndX = e.touches[0].clientX;
+            touchEndY = e.touches[0].clientY;
+            
+            const deltaX = touchEndX - touchStartX;
+            const deltaY = touchEndY - touchStartY;
+            const rotation = deltaX * 0.1;
+            
+            currentCardElement.style.transform = `translateX(${deltaX}px) rotate(${rotation}deg)`;
+            currentCardElement.style.opacity = 1 - Math.abs(deltaX) / 500;
+        }
+
+        function handleTouchEnd(e) {
+            if (isAnimating || !currentCardElement) return;
+            
+            const deltaX = touchEndX - touchStartX;
+            const threshold = 100;
+            
+            if (Math.abs(deltaX) > threshold) {
+                // Swipe détecté
+                const direction = deltaX > 0 ? 'like' : 'nope';
+                swipeCard(direction);
+            } else {
+                // Retour à la position initiale
+                currentCardElement.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+                currentCardElement.style.transform = '';
+                currentCardElement.style.opacity = '1';
+                
+                setTimeout(() => {
+                    currentCardElement.style.transition = '';
+                }, 300);
+            }
+            
+            currentCardElement = null;
+            touchStartX = 0;
+            touchStartY = 0;
+            touchEndX = 0;
+            touchEndY = 0;
+        }
+
+        // Ajouter les événements tactiles sur le mockup
+        const mockup = document.querySelector('.phone-frame');
+        if (mockup) {
+            mockup.addEventListener('touchstart', handleTouchStart, { passive: true });
+            mockup.addEventListener('touchmove', handleTouchMove, { passive: true });
+            mockup.addEventListener('touchend', handleTouchEnd);
+        }
     </script>
 </body>
 </html>

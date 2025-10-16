@@ -59,7 +59,9 @@ body {
 }
 
 .logo-icon {
-    font-size: 32px;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
 
 .nav-links {
@@ -1011,8 +1013,39 @@ body {
     line-height: 1.8;
 }
 
+.footer-contact {
+    margin-top: 16px;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 10px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.contact-link:hover {
+    color: var(--accent-primary);
+    border-color: var(--accent-primary);
+    background: rgba(255, 71, 87, 0.1);
+    transform: translateY(-2px);
+}
+
+.contact-link svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
 .footer-social {
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 .social-link {
@@ -1123,7 +1156,8 @@ body {
     }
 
     .logo-icon {
-        font-size: 24px;
+        width: 32px;
+        height: 32px;
     }
 
     .btn-primary {
@@ -1550,8 +1584,22 @@ body {
         font-size: 14px;
     }
 
+    .footer-contact {
+        margin-top: 14px;
+    }
+
+    .contact-link {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+    .contact-link svg {
+        width: 18px;
+        height: 18px;
+    }
+
     .footer-social {
-        margin-top: 16px;
+        margin-top: 14px;
     }
 
     .social-link {
