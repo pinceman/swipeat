@@ -577,7 +577,15 @@ body {
 }
 
 .plan-price {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
+}
+
+.plan-tagline {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    font-style: italic;
 }
 
 .price {
@@ -1371,6 +1379,11 @@ body {
         margin-bottom: 12px;
     }
 
+    .plan-tagline {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
     .price {
         font-size: 38px;
     }
@@ -1734,6 +1747,11 @@ body {
 
     .plan-header h3 {
         font-size: 20px;
+    }
+
+    .plan-tagline {
+        font-size: 12px;
+        margin-bottom: 16px;
     }
 
     .price {
