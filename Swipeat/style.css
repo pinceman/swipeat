@@ -272,7 +272,7 @@ body {
 
 .restaurant-card {
     width: 100%;
-    height: 550px;
+    height: 500px;
     background: var(--bg-card);
     border-radius: 25px;
     overflow: hidden;
@@ -282,7 +282,7 @@ body {
 }
 
 .card-image {
-    height: 350px;
+    height: 300px;
     background: linear-gradient(135deg, var(--accent-primary), var(--accent-orange));
     background-size: cover;
     background-position: center;
@@ -306,22 +306,22 @@ body {
 }
 
 .card-content {
-    padding: 28px 24px 24px 24px;
+    padding: 24px 24px 20px 24px;
 }
 
 .card-content h3 {
-    font-size: 24px;
-    margin-bottom: 12px;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
 .card-cuisine {
     color: var(--text-secondary);
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     font-size: 14px;
 }
 
 .card-rating {
-    margin-bottom: 18px;
+    margin-bottom: 12px;
     font-weight: 600;
     font-size: 15px;
 }
