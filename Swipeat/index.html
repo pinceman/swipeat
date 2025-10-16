@@ -247,7 +247,26 @@
     <!-- Blog Section -->
     <section class="blog">
         <div class="container">
-            <article class="blog-article">
+            <h2 class="section-title">Nos <span class="highlight">articles</span></h2>
+            <p class="section-subtitle">Découvre nos dernières actualités et insights</p>
+            
+            <!-- Blog Preview Card -->
+            <div class="blog-preview-card" onclick="toggleArticle()">
+                <div class="blog-preview-content">
+                    <span class="blog-date">16 octobre 2025</span>
+                    <h3 class="blog-preview-title">SwipEat : l'app qui transforme ton coup de fourchette en coup de cœur</h3>
+                    <p class="blog-preview-excerpt">Choisir un restaurant, c'est souvent un casse-tête. Entre les envies différentes, les avis contradictoires et les plateformes qui demandent mille clics pour réserver, la spontanéité disparaît vite...</p>
+                    <button class="btn-read-more">Lire l'article →</button>
+                </div>
+                <div class="blog-preview-image">
+                    🍽️
+                </div>
+            </div>
+
+            <!-- Full Article (Hidden by default) -->
+            <article class="blog-article" id="fullArticle" style="display: none;">
+                <button class="btn-close-article" onclick="toggleArticle()">✕ Fermer</button>
+                
                 <h2 class="blog-title">SwipEat : l'app qui transforme ton coup de fourchette en coup de cœur</h2>
                 
                 <div class="blog-intro">
@@ -422,6 +441,24 @@
     </footer>
 
     <script>
+        // Toggle article visibility
+        function toggleArticle() {
+            const article = document.getElementById('fullArticle');
+            const isVisible = article.style.display === 'block';
+            
+            if (isVisible) {
+                article.style.display = 'none';
+                // Scroll back to blog section
+                document.querySelector('.blog').scrollIntoView({ behavior: 'smooth' });
+            } else {
+                article.style.display = 'block';
+                // Scroll to article
+                setTimeout(() => {
+                    article.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        }
+
         // Données des restaurants
         const restaurants = [
             {
